@@ -40,6 +40,7 @@ jQuery(function ($) {
 				var store = localStorage.getItem(namespace);
 				return (store && JSON.parse(store) || []);
 			}
+		}	
 	};
 
 	var App = {
@@ -198,7 +199,7 @@ jQuery(function ($) {
 			}
 
 			this.todos.push({
-				id.util.uuid(),
+				id: util.uuid(),
 				title: val,
 				completed: false
 			});
